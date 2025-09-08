@@ -3,9 +3,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(".gallery img")
 
-    for (let img in images) {
+    for (let img of images) {
         img.addEventListener("click", function() {
-            alert("klikket på " + img.alt)
+            console.log("klikket på " + img.alt)
         })
     }
 });
